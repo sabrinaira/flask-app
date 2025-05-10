@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>BMI</h1>
+
+    <form action="{{url_for('thankyou')}}" method="POST">
+      <input type="text" name="full_name" />
+      <input type="email" name="user_email" />
+      <input type="number" name="user_weight" max="200" min="30" />
+      <input type="number" name="user_height" max="250" min="45" />
+    </form>
+
+    <button type="submit">Submit</button>
+  </body>
+  <!-- Correct closing body tag here -->
+</html>
